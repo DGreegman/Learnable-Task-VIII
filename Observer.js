@@ -1,3 +1,9 @@
+/* 
+
+Every Details of how this whole code works in the README file
+
+*/
+
 // Subject - Telephone class
 class Telephone {
   constructor() {

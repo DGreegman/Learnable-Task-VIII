@@ -8,6 +8,23 @@ The goal is to create a telephone package. The telephone class should expose 3 d
 
 The telephone class should also maintain a list of observers and notify them whenever a phone number is dialled. 
 
+## Classes
+
+### Telephone
+- `constructor()`: Initializes the Telephone object with an empty set for storing phone numbers and an empty array for observers.
+- `addPhoneNumber(phoneNumber)`: Adds a new phone number to the set if it doesn't already exist.
+- `removePhoneNumber(phoneNumber)`: Removes a phone number from the set if it exists.
+- `dialPhoneNumber(phoneNumber)`: Dials a phone number if it exists in the set, notifying all observers.
+- `addObserver(observer)`: Registers a new observer if it's not already registered.
+- `removeObserver(observer)`: Removes an observer from the list of observers.
+- `notifyObservers(phoneNumber)`: Notifies all registered observers when a phone number is dialed.
+
+### PhoneObserver
+- `update(phoneNumber)`: Implements the update method to log when a phone number is dialed.
+
+### DialingObserver
+- `update(phoneNumber)`: Implements the update method to log when a phone number is being dialed.
+
 
 ## Requirements
 1. Create a telephone class. It should expose 3 public methods - AddPhoneNumber, RemovePhoneNumber, and DialPhoneNumber.
